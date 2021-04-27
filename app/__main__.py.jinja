@@ -1,0 +1,13 @@
+from app import Application
+from pandastable import TableModel
+from views import View
+
+
+def main():
+    model = TableModel(dataframe=TableModel.getSampleData())
+    app = Application(View, model)
+    app.run()
+
+
+if __name__ == "__main__":
+    main()

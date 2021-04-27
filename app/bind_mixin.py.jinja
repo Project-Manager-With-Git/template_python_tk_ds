@@ -1,0 +1,7 @@
+class BindTableMixin:
+    def __init__(self):
+        self.bind_table()
+
+    def bind_table(self):
+        self.view.table.updateModel(self.model)
+        self.view.table.redraw()

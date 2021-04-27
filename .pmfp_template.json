@@ -1,0 +1,29 @@
+{
+    "language": "py",
+    "mini_language_version": "3.6",
+    "description": "使用标准库tk和pandastable的简数据科学可视化工具",
+    "author": "hsz",
+    "template_type": "GUI",
+    "requires": ["pandastable>=0.12.2"],
+    "test_requires": [
+        "coverage >= 5.5",
+        "mypy >= 0.800",
+        "autopep8 >= 1.5.6",
+        "pylint >= 2.8.0",
+        "pydocstyle>=6.0.0"
+    ],
+
+    "template_keys": {
+        "app_name": {
+            "description": "gui应用名,默认为项目名称",
+            "default": "{{ project_name }}"
+        }
+    },
+    "components": {
+        "app": {
+            "source": "app",
+            "description": "gui客户端应用",
+            "default_path": "app"
+        }
+    }
+}
